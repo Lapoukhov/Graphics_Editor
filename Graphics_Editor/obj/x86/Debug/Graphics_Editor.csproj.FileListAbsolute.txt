@@ -1,0 +1,8 @@
+D:\4_семестр\ООП\Graphics_Editor\Graphics_Editor\bin\Debug\Graphics_Editor.exe
+D:\4_семестр\ООП\Graphics_Editor\Graphics_Editor\bin\Debug\Graphics_Editor.pdb
+D:\4_семестр\ООП\Graphics_Editor\Graphics_Editor\obj\x86\Debug\Graphics_Editor.Properties.Resources.resources
+D:\4_семестр\ООП\Graphics_Editor\Graphics_Editor\obj\x86\Debug\Graphics_Editor.csproj.GenerateResource.Cache
+D:\4_семестр\ООП\Graphics_Editor\Graphics_Editor\obj\x86\Debug\Graphics_Editor.exe
+D:\4_семестр\ООП\Graphics_Editor\Graphics_Editor\obj\x86\Debug\Graphics_Editor.pdb
+D:\4_семестр\ООП\Graphics_Editor\Graphics_Editor\obj\x86\Debug\Graphics_Editor.Form_Editor_Window.resources
+D:\4_семестр\ООП\Graphics_Editor\Graphics_Editor\obj\x86\Debug\Graphics_Editor.csprojResolveAssemblyReference.cache
