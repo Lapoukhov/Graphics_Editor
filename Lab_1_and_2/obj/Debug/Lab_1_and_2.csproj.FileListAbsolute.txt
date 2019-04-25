@@ -1,0 +1,30 @@
+C:\Users\Sergei\source\repos\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Lab_1_and_2.exe.config
+C:\Users\Sergei\source\repos\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Lab_1_and_2.exe
+C:\Users\Sergei\source\repos\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Lab_1_and_2.pdb
+C:\Users\Sergei\source\repos\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.Form1.resources
+C:\Users\Sergei\source\repos\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.Properties.Resources.resources
+C:\Users\Sergei\source\repos\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.csproj.GenerateResource.cache
+C:\Users\Sergei\source\repos\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.csproj.CoreCompileInputs.cache
+C:\Users\Sergei\source\repos\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.exe
+C:\Users\Sergei\source\repos\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.pdb
+C:\Users\Sergei\source\repos\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.csprojResolveAssemblyReference.cache
+C:\Users\Влад\Downloads\Зпижженый семестр\Зпижженый семестр\ООТПиСП 4 семестр\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Lab_1_and_2.exe.config
+C:\Users\Влад\Downloads\Зпижженый семестр\Зпижженый семестр\ООТПиСП 4 семестр\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Lab_1_and_2.exe
+C:\Users\Влад\Downloads\Зпижженый семестр\Зпижженый семестр\ООТПиСП 4 семестр\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Lab_1_and_2.pdb
+C:\Users\Влад\Downloads\Зпижженый семестр\Зпижженый семестр\ООТПиСП 4 семестр\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.csprojResolveAssemblyReference.cache
+C:\Users\Влад\Downloads\Зпижженый семестр\Зпижженый семестр\ООТПиСП 4 семестр\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.Form1.resources
+C:\Users\Влад\Downloads\Зпижженый семестр\Зпижженый семестр\ООТПиСП 4 семестр\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.Properties.Resources.resources
+C:\Users\Влад\Downloads\Зпижженый семестр\Зпижженый семестр\ООТПиСП 4 семестр\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.csproj.GenerateResource.Cache
+C:\Users\Влад\Downloads\Зпижженый семестр\Зпижженый семестр\ООТПиСП 4 семестр\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.csproj.CoreCompileInputs.cache
+C:\Users\Влад\Downloads\Зпижженый семестр\Зпижженый семестр\ООТПиСП 4 семестр\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.exe
+C:\Users\Влад\Downloads\Зпижженый семестр\Зпижженый семестр\ООТПиСП 4 семестр\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.pdb
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.Form1.resources
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.Properties.Resources.resources
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.csproj.GenerateResource.cache
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Graphics_Editor.exe.config
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Graphics_Editor.exe
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Graphics_Editor.pdb
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.csprojResolveAssemblyReference.cache
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Graphics_Editor.exe
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Graphics_Editor.pdb
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Lab_1_and_2.exe.config

@@ -1,0 +1,9 @@
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Graphics_Editor.csproj.GenerateResource.Cache
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Lab_1_and_2.Form_Editor.resources
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Graphics_Editor_Lab_1_2.exe.config
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Graphics_Editor_Lab_1_2.exe
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\bin\Debug\Graphics_Editor_Lab_1_2.pdb
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Graphics_Editor_Lab_1_2.Properties.Resources.resources
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Graphics_Editor_Lab_1_2.exe
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Graphics_Editor_Lab_1_2.pdb
+D:\4_семестр\ООП\Lab_1_and_2_OOP\Lab_1_and_2\obj\Debug\Graphics_Editor.csprojResolveAssemblyReference.cache
