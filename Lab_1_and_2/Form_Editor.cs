@@ -30,9 +30,9 @@ namespace Lab_1_and_2
             instr.Add("circle", new CCircle());
             instr.Add("ellipse", new CEllipse());
             InitializeComponent();
-            pictureBox = Editor;
-            BitmapMain = new Bitmap(Editor.Width, Editor.Height);
-            BitmapBuff = new Bitmap(Editor.Width, Editor.Height);
+            pictureBox = Editor_Canvas;
+            BitmapMain = new Bitmap(Editor_Canvas.Width, Editor_Canvas.Height);
+            BitmapBuff = new Bitmap(Editor_Canvas.Width, Editor_Canvas.Height);
         }
 
         private void Editor_MouseClick(object sender, MouseEventArgs e)
@@ -79,7 +79,7 @@ namespace Lab_1_and_2
                 shape.Draw(BitmapBuff);
             }
 
-            Editor.Image = BitmapBuff;
+            Editor_Canvas.Image = BitmapBuff;
             if (point.Length > 1)
                 Array.Resize(ref point, point.Length - 1);
 
@@ -100,7 +100,7 @@ namespace Lab_1_and_2
         private void Changed_Width(object sender, EventArgs e)
         {
             penWidth = (int)width.Value;
-            BitmapBuff = new Bitmap(Editor.Width, Editor.Height);
+            BitmapBuff = new Bitmap(Editor_Canvas.Width, Editor_Canvas.Height);
             Array.Resize(ref point, 0);
         }
     }
