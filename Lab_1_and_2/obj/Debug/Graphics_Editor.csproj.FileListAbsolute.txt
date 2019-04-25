@@ -15,3 +15,4 @@ D:\4_семестр\ООП\Graphics_Editor\Lab_1_and_2\obj\Debug\Graphics_Editor
 D:\4_семестр\ООП\Graphics_Editor\Lab_1_and_2\obj\Debug\Graphics_Editor.csproj.GenerateResource.Cache
 D:\4_семестр\ООП\Graphics_Editor\Lab_1_and_2\bin\Debug\Graphics_Editor_Lab_1_2.exe
 D:\4_семестр\ООП\Graphics_Editor\Lab_1_and_2\bin\Debug\Graphics_Editor_Lab_1_2.pdb
+D:\4_семестр\ООП\Graphics_Editor\Lab_1_and_2\obj\Debug\Graphics_Editor.csprojResolveAssemblyReference.cache

@@ -111,7 +111,7 @@
             this.colour.Name = "colour";
             this.colour.Size = new System.Drawing.Size(160, 34);
             this.colour.TabIndex = 4;
-            this.colour.Text = "colour";
+            this.colour.Text = "Выбрать";
             this.colour.UseVisualStyleBackColor = false;
             this.colour.Click += new System.EventHandler(this.Color_Line_Click);
             // 
