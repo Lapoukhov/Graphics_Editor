@@ -30,12 +30,12 @@ namespace Lab_1_and_2
             instr.Add("circle", new CCircle());
             instr.Add("ellipse", new CEllipse());
             InitializeComponent();
-            pictureBox = redactor;
-            BitmapMain = new Bitmap(redactor.Width, redactor.Height);
-            BitmapBuff = new Bitmap(redactor.Width, redactor.Height);
+            pictureBox = Editor;
+            BitmapMain = new Bitmap(Editor.Width, Editor.Height);
+            BitmapBuff = new Bitmap(Editor.Width, Editor.Height);
         }
 
-        private void redactor_MouseClick(object sender, MouseEventArgs e)
+        private void Editor_MouseClick(object sender, MouseEventArgs e)
         {
             Array.Resize(ref point, point.Length + 1);
             point[point.Length - 1].X = e.X;
@@ -44,7 +44,7 @@ namespace Lab_1_and_2
             pictureBox.Image = BitmapMain;
         }
 
-        private void redactor_MouseMove(object sender, MouseEventArgs e)
+        private void Editor_MouseMove(object sender, MouseEventArgs e)
         {
             if (instrument.Text != "triangle")
             {
@@ -79,7 +79,7 @@ namespace Lab_1_and_2
                 shape.Draw(BitmapBuff);
             }
 
-            redactor.Image = BitmapBuff;
+            Editor.Image = BitmapBuff;
             if (point.Length > 1)
                 Array.Resize(ref point, point.Length - 1);
 
@@ -88,7 +88,7 @@ namespace Lab_1_and_2
             allFigs.Add(newItem);
         }
 
-        private void color_Click(object sender, EventArgs e)
+        private void Color_Line_Click(object sender, EventArgs e)
         {
             if (colorDialog.ShowDialog() == DialogResult.OK)
             {
@@ -97,10 +97,10 @@ namespace Lab_1_and_2
             Array.Resize(ref point, 0);
         }
 
-        private void width_ValueChanged(object sender, EventArgs e)
+        private void Changed_Width(object sender, EventArgs e)
         {
             penWidth = (int)width.Value;
-            BitmapBuff = new Bitmap(redactor.Width, redactor.Height);
+            BitmapBuff = new Bitmap(Editor.Width, Editor.Height);
             Array.Resize(ref point, 0);
         }
     }

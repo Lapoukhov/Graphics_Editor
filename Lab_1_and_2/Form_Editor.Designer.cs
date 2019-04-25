@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.redactor = new System.Windows.Forms.PictureBox();
+            this.Editor = new System.Windows.Forms.PictureBox();
             this.instrument = new System.Windows.Forms.ComboBox();
             this.width = new System.Windows.Forms.NumericUpDown();
             this.colour = new System.Windows.Forms.Button();
@@ -36,22 +36,22 @@
             this.label_Figure = new System.Windows.Forms.Label();
             this.label_LIne = new System.Windows.Forms.Label();
             this.label_Color = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.redactor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Editor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.width)).BeginInit();
             this.SuspendLayout();
             // 
-            // redactor
+            // Editor
             // 
-            this.redactor.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.redactor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.redactor.Location = new System.Drawing.Point(199, 15);
-            this.redactor.Margin = new System.Windows.Forms.Padding(4);
-            this.redactor.Name = "redactor";
-            this.redactor.Size = new System.Drawing.Size(878, 541);
-            this.redactor.TabIndex = 0;
-            this.redactor.TabStop = false;
-            this.redactor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.redactor_MouseClick);
-            this.redactor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.redactor_MouseMove);
+            this.Editor.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Editor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Editor.Location = new System.Drawing.Point(199, 15);
+            this.Editor.Margin = new System.Windows.Forms.Padding(4);
+            this.Editor.Name = "Editor";
+            this.Editor.Size = new System.Drawing.Size(878, 541);
+            this.Editor.TabIndex = 0;
+            this.Editor.TabStop = false;
+            this.Editor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Editor_MouseClick);
+            this.Editor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Editor_MouseMove);
             // 
             // instrument
             // 
@@ -93,7 +93,7 @@
             0,
             0,
             0});
-            this.width.ValueChanged += new System.EventHandler(this.width_ValueChanged);
+            this.width.ValueChanged += new System.EventHandler(this.Changed_Width);
             // 
             // colour
             // 
@@ -107,7 +107,7 @@
             this.colour.TabIndex = 4;
             this.colour.Text = "colour";
             this.colour.UseVisualStyleBackColor = false;
-            this.colour.Click += new System.EventHandler(this.color_Click);
+            this.colour.Click += new System.EventHandler(this.Color_Line_Click);
             // 
             // label_Figure
             // 
@@ -152,11 +152,11 @@
             this.Controls.Add(this.colour);
             this.Controls.Add(this.width);
             this.Controls.Add(this.instrument);
-            this.Controls.Add(this.redactor);
+            this.Controls.Add(this.Editor);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Editor";
             this.Text = "Form_Editor";
-            ((System.ComponentModel.ISupportInitialize)(this.redactor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Editor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.width)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -165,7 +165,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox redactor;
+        private System.Windows.Forms.PictureBox Editor;
         private System.Windows.Forms.ComboBox instrument;
         private System.Windows.Forms.NumericUpDown width;
         private System.Windows.Forms.Button colour;
