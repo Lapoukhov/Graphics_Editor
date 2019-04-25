@@ -21,6 +21,9 @@ namespace Lab_1_and_2
         private List<Shape> Figures_List = new List<Shape>();
         private Dictionary<string, Shape> figure = new Dictionary<string, Shape>();
 
+        private Stack<Bitmap> undo = new Stack<Bitmap>();
+        private Stack<Bitmap> redo = new Stack<Bitmap>();
+
         public Form_Editor()
         {
             figure.Add("Линия", new CLine());
@@ -40,6 +43,10 @@ namespace Lab_1_and_2
             Array.Resize(ref point, point.Length + 1);
             point[point.Length - 1].X = e.X;
             point[point.Length - 1].Y = e.Y;
+
+            var copy = Bitmap_Last.Clone(new Rectangle(0, 0, Bitmap_Last.Width, Bitmap_Last.Height), Bitmap_Last.PixelFormat);
+            undo.Push(copy);
+
             Bitmap_Current = new Bitmap(Bitmap_Last);
             pictureBox.Image = Bitmap_Current;
         }
@@ -95,6 +102,58 @@ namespace Lab_1_and_2
                 brushColor = colorDialog.Color;
             }
             Array.Resize(ref point, 0);
+        }
+
+        private void Cancel_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int i = 1;
+            if (undo.Count > 0)
+            {
+                if (i == 1)
+                {
+                    Bitmap_Current = undo.Pop();
+                    var copyRedo = Bitmap_Current.Clone(new Rectangle(0, 0, Bitmap_Current.Width, Bitmap_Current.Height), Bitmap_Current.PixelFormat);
+                    redo.Push(copyRedo);
+                    i++;
+                }
+                else
+                {
+                    Bitmap_Current = undo.Pop();
+                }
+                if (undo.Count > 0)
+                {
+                    Bitmap_Current = undo.Pop();
+                    var copyRedo = Bitmap_Current.Clone(new Rectangle(0, 0, Bitmap_Current.Width, Bitmap_Current.Height), Bitmap_Current.PixelFormat);
+                    redo.Push(copyRedo);
+                    pictureBox.Image = Bitmap_Current;
+                }
+            }
+        }
+
+        private void Return_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int i = 1;
+            if (redo.Count > 0)
+            {
+                if (i == 1)
+                {
+                    Bitmap_Current = redo.Pop();
+                    var copy = Bitmap_Current.Clone(new Rectangle(0, 0, Bitmap_Current.Width, Bitmap_Current.Height), Bitmap_Current.PixelFormat);
+                    undo.Push(copy);
+                    i++;
+                }
+                else
+                {
+                    Bitmap_Current = undo.Pop();
+                }
+                if (redo.Count > 0)
+                {
+                    Bitmap_Current = redo.Pop();
+                    var copy = Bitmap_Current.Clone(new Rectangle(0, 0, Bitmap_Current.Width, Bitmap_Current.Height), Bitmap_Current.PixelFormat);
+                    undo.Push(copy);
+                    pictureBox.Image = Bitmap_Current;
+                }
+            }
         }
 
         private void Changed_Width(object sender, EventArgs e)

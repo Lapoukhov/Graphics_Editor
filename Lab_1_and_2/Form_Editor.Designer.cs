@@ -173,6 +173,7 @@
             this.отменитьИзмененияToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
             this.отменитьИзмененияToolStripMenuItem.Size = new System.Drawing.Size(285, 26);
             this.отменитьИзмененияToolStripMenuItem.Text = "Отменить изменения";
+            this.отменитьИзмененияToolStripMenuItem.Click += new System.EventHandler(this.Cancel_ToolStripMenuItem_Click);
             // 
             // вернутьИзмененияToolStripMenuItem
             // 
@@ -180,6 +181,7 @@
             this.вернутьИзмененияToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
             this.вернутьИзмененияToolStripMenuItem.Size = new System.Drawing.Size(285, 26);
             this.вернутьИзмененияToolStripMenuItem.Text = "Вернуть изменения";
+            this.вернутьИзмененияToolStripMenuItem.Click += new System.EventHandler(this.Return_ToolStripMenuItem_Click);
             // 
             // сохранитьИзображениеToolStripMenuItem
             // 
