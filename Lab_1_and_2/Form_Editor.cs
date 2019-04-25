@@ -12,41 +12,41 @@ namespace Lab_1_and_2
 {
     public partial class Form_Editor : Form
     {
+        private static Bitmap Bitmap_Current, Bitmap_Last;
+        public PictureBox pictureBox;
         public Point[] point = new Point[0];
         private Shape shape;
-        private static Bitmap BitmapMain, BitmapBuff;
-        public PictureBox pictureBox;
-        public static int penWidth;
         public static Color brushColor = Color.Black;
-        private Dictionary<string, Shape> instr = new Dictionary<string, Shape>();
-        private List<Shape> allFigs = new List<Shape>();
+        public static int penWidth;
+        private List<Shape> Figures_List = new List<Shape>();
+        private Dictionary<string, Shape> figure = new Dictionary<string, Shape>();
 
         public Form_Editor()
         {
-            instr.Add("line", new CLine());
-            instr.Add("rectangle", new CRectangle());
-            instr.Add("square", new CSquare());
-            instr.Add("triangle", new CTriangle());
-            instr.Add("circle", new CCircle());
-            instr.Add("ellipse", new CEllipse());
+            figure.Add("Линия", new CLine());
+            figure.Add("Круг", new CCircle());
+            figure.Add("Эллипс", new CEllipse());
+            figure.Add("Прямоугольник", new CRectangle());
+            figure.Add("Квадрат", new CSquare());
+            figure.Add("Треугольник", new CTriangle());
             InitializeComponent();
             pictureBox = Editor_Canvas;
-            BitmapMain = new Bitmap(Editor_Canvas.Width, Editor_Canvas.Height);
-            BitmapBuff = new Bitmap(Editor_Canvas.Width, Editor_Canvas.Height);
+            Bitmap_Current = new Bitmap(Editor_Canvas.Width, Editor_Canvas.Height);
+            Bitmap_Last = new Bitmap(Editor_Canvas.Width, Editor_Canvas.Height);
         }
 
-        private void Editor_MouseClick(object sender, MouseEventArgs e)
+        private void Editor_Canvas_MouseClick(object sender, MouseEventArgs e)
         {
             Array.Resize(ref point, point.Length + 1);
             point[point.Length - 1].X = e.X;
             point[point.Length - 1].Y = e.Y;
-            BitmapMain = new Bitmap(BitmapBuff);
-            pictureBox.Image = BitmapMain;
+            Bitmap_Current = new Bitmap(Bitmap_Last);
+            pictureBox.Image = Bitmap_Current;
         }
 
-        private void Editor_MouseMove(object sender, MouseEventArgs e)
+        private void Editor_Canvas_MouseMove(object sender, MouseEventArgs e)
         {
-            if (instrument.Text != "triangle")
+            if (instrument.Text != "Треугольник")
             {
                 if (point.Length > 1)
                 {
@@ -68,24 +68,24 @@ namespace Lab_1_and_2
                 point[point.Length - 1].Y = e.Y;
             }
 
-            BitmapBuff = new Bitmap(BitmapMain);
+            Bitmap_Last = new Bitmap(Bitmap_Current);
 
             // Создайм новый элемент
-            instr.TryGetValue(instrument.Text, out shape);
+            figure.TryGetValue(instrument.Text, out shape);
             
             if (shape != null && point.Length > 1)
             {
                 shape.Coords = point;
-                shape.Draw(BitmapBuff);
+                shape.Draw(Bitmap_Last);
             }
 
-            Editor_Canvas.Image = BitmapBuff;
+            Editor_Canvas.Image = Bitmap_Last;
             if (point.Length > 1)
                 Array.Resize(ref point, point.Length - 1);
 
-            //добавляем отрисованную фигуру в лист
+            //в список нарисованную фигуру
             var newItem = shape;
-            allFigs.Add(newItem);
+            Figures_List.Add(newItem);
         }
 
         private void Color_Line_Click(object sender, EventArgs e)
@@ -100,7 +100,7 @@ namespace Lab_1_and_2
         private void Changed_Width(object sender, EventArgs e)
         {
             penWidth = (int)width.Value;
-            BitmapBuff = new Bitmap(Editor_Canvas.Width, Editor_Canvas.Height);
+            Bitmap_Last = new Bitmap(Editor_Canvas.Width, Editor_Canvas.Height);
             Array.Resize(ref point, 0);
         }
     }

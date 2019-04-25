@@ -56,8 +56,8 @@
             this.Editor_Canvas.Size = new System.Drawing.Size(878, 517);
             this.Editor_Canvas.TabIndex = 0;
             this.Editor_Canvas.TabStop = false;
-            this.Editor_Canvas.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Editor_MouseClick);
-            this.Editor_Canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Editor_MouseMove);
+            this.Editor_Canvas.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Editor_Canvas_MouseClick);
+            this.Editor_Canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Editor_Canvas_MouseMove);
             // 
             // instrument
             // 
@@ -66,18 +66,18 @@
             this.instrument.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.instrument.FormattingEnabled = true;
             this.instrument.Items.AddRange(new object[] {
-            "line",
-            "rectangle",
-            "square",
-            "triangle",
-            "circle",
-            "ellipse"});
+            "Линия",
+            "Круг",
+            "Эллипс",
+            "Прямоугольник",
+            "Квадрат",
+            "Треугольник"});
             this.instrument.Location = new System.Drawing.Point(16, 72);
             this.instrument.Margin = new System.Windows.Forms.Padding(4);
             this.instrument.Name = "instrument";
             this.instrument.Size = new System.Drawing.Size(160, 26);
             this.instrument.TabIndex = 1;
-            this.instrument.Text = "line";
+            this.instrument.Text = "Линия";
             // 
             // width
             // 
