@@ -12,7 +12,7 @@ namespace Lab_1_and_2
 {
     public partial class Form_Editor : Form
     {
-        public Point[] point = new Point[0];            // координаты точек
+        public Point[] point = new Point[0];
         private Shape shape;
         private static Bitmap BitmapMain, BitmapBuff;
         public PictureBox pictureBox;
@@ -46,9 +46,6 @@ namespace Lab_1_and_2
 
         private void redactor_MouseMove(object sender, MouseEventArgs e)
         {
-
-            // выбираем количество точек
-            // в треугольнике - 3, в остальных - 2
             if (instrument.Text != "triangle")
             {
                 if (point.Length > 1)
@@ -80,7 +77,6 @@ namespace Lab_1_and_2
             {
                 shape.Coords = point;
                 shape.Draw(BitmapBuff);
-                //shape.Draw(BitmapBuff, point);
             }
 
             redactor.Image = BitmapBuff;
@@ -92,7 +88,6 @@ namespace Lab_1_and_2
             allFigs.Add(newItem);
         }
 
-        // Выбор цвета
         private void color_Click(object sender, EventArgs e)
         {
             if (colorDialog.ShowDialog() == DialogResult.OK)
@@ -102,7 +97,6 @@ namespace Lab_1_and_2
             Array.Resize(ref point, 0);
         }
 
-        // Выбор ширины линии
         private void width_ValueChanged(object sender, EventArgs e)
         {
             penWidth = (int)width.Value;
