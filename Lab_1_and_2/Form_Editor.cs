@@ -21,8 +21,8 @@ namespace Lab_1_and_2
         private List<Shape> Figures_List = new List<Shape>();
         private Dictionary<string, Shape> figure = new Dictionary<string, Shape>();
 
-        private Stack<Bitmap> undo = new Stack<Bitmap>();
-        private Stack<Bitmap> redo = new Stack<Bitmap>();
+        private Stack<Bitmap> Cancel_Stack = new Stack<Bitmap>();
+        private Stack<Bitmap> Redo_Stack = new Stack<Bitmap>();
 
         public Form_Editor()
         {
@@ -45,7 +45,8 @@ namespace Lab_1_and_2
             point[point.Length - 1].Y = e.Y;
 
             var copy = Bitmap_Last.Clone(new Rectangle(0, 0, Bitmap_Last.Width, Bitmap_Last.Height), Bitmap_Last.PixelFormat);
-            undo.Push(copy);
+            Cancel_Stack.Push(copy);
+            Redo_Stack.Push(copy);
 
             Bitmap_Current = new Bitmap(Bitmap_Last);
             pictureBox.Image = Bitmap_Current;
@@ -53,7 +54,7 @@ namespace Lab_1_and_2
 
         private void Editor_Canvas_MouseMove(object sender, MouseEventArgs e)
         {
-            if (instrument.Text != "Треугольник")
+            if (figure_Form.Text != "Треугольник")
             {
                 if (point.Length > 1)
                 {
@@ -78,7 +79,7 @@ namespace Lab_1_and_2
             Bitmap_Last = new Bitmap(Bitmap_Current);
 
             // Создайм новый элемент
-            figure.TryGetValue(instrument.Text, out shape);
+            figure.TryGetValue(figure_Form.Text, out shape);
             
             if (shape != null && point.Length > 1)
             {
@@ -90,7 +91,6 @@ namespace Lab_1_and_2
             if (point.Length > 1)
                 Array.Resize(ref point, point.Length - 1);
 
-            //в список нарисованную фигуру
             var newItem = shape;
             Figures_List.Add(newItem);
         }
@@ -107,24 +107,24 @@ namespace Lab_1_and_2
         private void Cancel_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int i = 1;
-            if (undo.Count > 0)
+            if (Cancel_Stack.Count > 0)
             {
                 if (i == 1)
                 {
-                    Bitmap_Current = undo.Pop();
-                    var copyRedo = Bitmap_Current.Clone(new Rectangle(0, 0, Bitmap_Current.Width, Bitmap_Current.Height), Bitmap_Current.PixelFormat);
-                    redo.Push(copyRedo);
+                    Bitmap_Current = Cancel_Stack.Pop();
+                    var Copy_Redo = Bitmap_Current.Clone(new Rectangle(0, 0, Bitmap_Current.Width, Bitmap_Current.Height), Bitmap_Current.PixelFormat);
+                    Redo_Stack.Push(Copy_Redo);
                     i++;
                 }
                 else
                 {
-                    Bitmap_Current = undo.Pop();
+                    Bitmap_Current = Cancel_Stack.Pop();
                 }
-                if (undo.Count > 0)
+                if (Cancel_Stack.Count > 0)
                 {
-                    Bitmap_Current = undo.Pop();
+                    Bitmap_Current = Cancel_Stack.Pop();
                     var copyRedo = Bitmap_Current.Clone(new Rectangle(0, 0, Bitmap_Current.Width, Bitmap_Current.Height), Bitmap_Current.PixelFormat);
-                    redo.Push(copyRedo);
+                    Redo_Stack.Push(copyRedo);
                     pictureBox.Image = Bitmap_Current;
                 }
             }
@@ -133,24 +133,24 @@ namespace Lab_1_and_2
         private void Return_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int i = 1;
-            if (redo.Count > 0)
+            if (Redo_Stack.Count > 0)
             {
                 if (i == 1)
                 {
-                    Bitmap_Current = redo.Pop();
-                    var copy = Bitmap_Current.Clone(new Rectangle(0, 0, Bitmap_Current.Width, Bitmap_Current.Height), Bitmap_Current.PixelFormat);
-                    undo.Push(copy);
+                    Bitmap_Current = Redo_Stack.Pop();
+                    var Copy = Bitmap_Current.Clone(new Rectangle(0, 0, Bitmap_Current.Width, Bitmap_Current.Height), Bitmap_Current.PixelFormat);
+                    Cancel_Stack.Push(Copy);
                     i++;
                 }
                 else
                 {
-                    Bitmap_Current = undo.Pop();
+                    Bitmap_Current = Cancel_Stack.Pop();
                 }
-                if (redo.Count > 0)
+                if (Redo_Stack.Count > 0)
                 {
-                    Bitmap_Current = redo.Pop();
+                    Bitmap_Current = Redo_Stack.Pop();
                     var copy = Bitmap_Current.Clone(new Rectangle(0, 0, Bitmap_Current.Width, Bitmap_Current.Height), Bitmap_Current.PixelFormat);
-                    undo.Push(copy);
+                    Cancel_Stack.Push(copy);
                     pictureBox.Image = Bitmap_Current;
                 }
             }

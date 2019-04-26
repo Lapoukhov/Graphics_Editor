@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.Editor_Canvas = new System.Windows.Forms.PictureBox();
-            this.instrument = new System.Windows.Forms.ComboBox();
+            this.figure_Form = new System.Windows.Forms.ComboBox();
             this.width = new System.Windows.Forms.NumericUpDown();
             this.colour = new System.Windows.Forms.Button();
             this.colorDialog = new System.Windows.Forms.ColorDialog();
@@ -59,25 +59,25 @@
             this.Editor_Canvas.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Editor_Canvas_MouseClick);
             this.Editor_Canvas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Editor_Canvas_MouseMove);
             // 
-            // instrument
+            // figure_Form
             // 
-            this.instrument.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.instrument.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.instrument.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.instrument.FormattingEnabled = true;
-            this.instrument.Items.AddRange(new object[] {
+            this.figure_Form.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.figure_Form.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.figure_Form.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.figure_Form.FormattingEnabled = true;
+            this.figure_Form.Items.AddRange(new object[] {
             "Линия",
             "Круг",
             "Эллипс",
             "Прямоугольник",
             "Квадрат",
             "Треугольник"});
-            this.instrument.Location = new System.Drawing.Point(16, 72);
-            this.instrument.Margin = new System.Windows.Forms.Padding(4);
-            this.instrument.Name = "instrument";
-            this.instrument.Size = new System.Drawing.Size(160, 26);
-            this.instrument.TabIndex = 1;
-            this.instrument.Text = "Линия";
+            this.figure_Form.Location = new System.Drawing.Point(16, 72);
+            this.figure_Form.Margin = new System.Windows.Forms.Padding(4);
+            this.figure_Form.Name = "figure_Form";
+            this.figure_Form.Size = new System.Drawing.Size(160, 26);
+            this.figure_Form.TabIndex = 1;
+            this.figure_Form.Text = "Линия";
             // 
             // width
             // 
@@ -201,7 +201,7 @@
             this.Controls.Add(this.label_Figure);
             this.Controls.Add(this.colour);
             this.Controls.Add(this.width);
-            this.Controls.Add(this.instrument);
+            this.Controls.Add(this.figure_Form);
             this.Controls.Add(this.Editor_Canvas);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -220,7 +220,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox Editor_Canvas;
-        private System.Windows.Forms.ComboBox instrument;
+        private System.Windows.Forms.ComboBox figure_Form;
         private System.Windows.Forms.NumericUpDown width;
         private System.Windows.Forms.Button colour;
         private System.Windows.Forms.ColorDialog colorDialog;

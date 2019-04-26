@@ -9,7 +9,7 @@ namespace Lab_1_and_2
 {
     class Shape
     {
-        public static Graphics paint;
+        public Graphics paint;
         public Pen pen;
         private Point[] points;
         public Point[] Coords
@@ -24,7 +24,6 @@ namespace Lab_1_and_2
             }
         }
 
-        //public virtual void Draw(Bitmap bitmap, Point[] points)
         public virtual void Draw(Bitmap bitmap)
         {
             paint = Graphics.FromImage(bitmap);
