@@ -41,6 +41,7 @@
             this.отменитьИзмененияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вернутьИзмененияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьИзображениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.загрузитьИзФайлаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.Editor_Canvas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.width)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -162,7 +163,8 @@
             this.менюПрограммыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.отменитьИзмененияToolStripMenuItem,
             this.вернутьИзмененияToolStripMenuItem,
-            this.сохранитьИзображениеToolStripMenuItem});
+            this.сохранитьИзображениеToolStripMenuItem,
+            this.загрузитьИзФайлаToolStripMenuItem});
             this.менюПрограммыToolStripMenuItem.Name = "менюПрограммыToolStripMenuItem";
             this.менюПрограммыToolStripMenuItem.Size = new System.Drawing.Size(150, 24);
             this.менюПрограммыToolStripMenuItem.Text = "Меню программы";
@@ -171,7 +173,7 @@
             // 
             this.отменитьИзмененияToolStripMenuItem.Name = "отменитьИзмененияToolStripMenuItem";
             this.отменитьИзмененияToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.отменитьИзмененияToolStripMenuItem.Size = new System.Drawing.Size(285, 26);
+            this.отменитьИзмененияToolStripMenuItem.Size = new System.Drawing.Size(308, 26);
             this.отменитьИзмененияToolStripMenuItem.Text = "Отменить изменения";
             this.отменитьИзмененияToolStripMenuItem.Click += new System.EventHandler(this.Cancel_ToolStripMenuItem_Click);
             // 
@@ -179,15 +181,22 @@
             // 
             this.вернутьИзмененияToolStripMenuItem.Name = "вернутьИзмененияToolStripMenuItem";
             this.вернутьИзмененияToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
-            this.вернутьИзмененияToolStripMenuItem.Size = new System.Drawing.Size(285, 26);
+            this.вернутьИзмененияToolStripMenuItem.Size = new System.Drawing.Size(308, 26);
             this.вернутьИзмененияToolStripMenuItem.Text = "Вернуть изменения";
             this.вернутьИзмененияToolStripMenuItem.Click += new System.EventHandler(this.Return_ToolStripMenuItem_Click);
             // 
             // сохранитьИзображениеToolStripMenuItem
             // 
             this.сохранитьИзображениеToolStripMenuItem.Name = "сохранитьИзображениеToolStripMenuItem";
-            this.сохранитьИзображениеToolStripMenuItem.Size = new System.Drawing.Size(285, 26);
+            this.сохранитьИзображениеToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.сохранитьИзображениеToolStripMenuItem.Size = new System.Drawing.Size(308, 26);
             this.сохранитьИзображениеToolStripMenuItem.Text = "Сохранить изображение";
+            // 
+            // загрузитьИзФайлаToolStripMenuItem
+            // 
+            this.загрузитьИзФайлаToolStripMenuItem.Name = "загрузитьИзФайлаToolStripMenuItem";
+            this.загрузитьИзФайлаToolStripMenuItem.Size = new System.Drawing.Size(308, 26);
+            this.загрузитьИзФайлаToolStripMenuItem.Text = "Загрузить из файла";
             // 
             // Form_Editor
             // 
@@ -232,6 +241,7 @@
         private System.Windows.Forms.ToolStripMenuItem отменитьИзмененияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem вернутьИзмененияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сохранитьИзображениеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem загрузитьИзФайлаToolStripMenuItem;
     }
 }
 
