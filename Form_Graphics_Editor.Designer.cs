@@ -41,7 +41,6 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.label2 = new System.Windows.Forms.Label();
             this.PanCol = new System.Windows.Forms.Panel();
-            this.BtnClr = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.TBX1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,6 +62,9 @@
             this.вернутьИзмененияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьИзображениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.загрузитьИзображениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.очиститьИщображениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.GBShp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TrWidth)).BeginInit();
@@ -72,10 +74,11 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(156, 38);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(179, 44);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(844, 572);
+            this.pictureBox1.Size = new System.Drawing.Size(836, 647);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
@@ -92,14 +95,16 @@
             this.GBShp.Controls.Add(this.RBRec);
             this.GBShp.Controls.Add(this.RBLine);
             this.GBShp.Controls.Add(this.RBTri);
-            this.GBShp.Location = new System.Drawing.Point(16, 37);
+            this.GBShp.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.GBShp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.GBShp.Location = new System.Drawing.Point(0, 37);
             this.GBShp.Margin = new System.Windows.Forms.Padding(4);
             this.GBShp.Name = "GBShp";
             this.GBShp.Padding = new System.Windows.Forms.Padding(4);
-            this.GBShp.Size = new System.Drawing.Size(132, 208);
+            this.GBShp.Size = new System.Drawing.Size(179, 208);
             this.GBShp.TabIndex = 5;
             this.GBShp.TabStop = false;
-            this.GBShp.Text = "Shapes";
+            this.GBShp.Text = "Выбор фигуры";
             // 
             // label1
             // 
@@ -107,7 +112,7 @@
             this.label1.Location = new System.Drawing.Point(4, 208);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 17);
+            this.label1.Size = new System.Drawing.Size(46, 18);
             this.label1.TabIndex = 12;
             this.label1.Text = "Width";
             // 
@@ -117,10 +122,10 @@
             this.RBHex.Location = new System.Drawing.Point(8, 164);
             this.RBHex.Margin = new System.Windows.Forms.Padding(4);
             this.RBHex.Name = "RBHex";
-            this.RBHex.Size = new System.Drawing.Size(85, 21);
+            this.RBHex.Size = new System.Drawing.Size(136, 22);
             this.RBHex.TabIndex = 11;
             this.RBHex.TabStop = true;
-            this.RBHex.Text = "Hexagon";
+            this.RBHex.Text = "Шестиугольник";
             this.RBHex.UseVisualStyleBackColor = true;
             // 
             // RBOct
@@ -129,10 +134,10 @@
             this.RBOct.Location = new System.Drawing.Point(8, 135);
             this.RBOct.Margin = new System.Windows.Forms.Padding(4);
             this.RBOct.Name = "RBOct";
-            this.RBOct.Size = new System.Drawing.Size(83, 21);
+            this.RBOct.Size = new System.Drawing.Size(146, 22);
             this.RBOct.TabIndex = 10;
             this.RBOct.TabStop = true;
-            this.RBOct.Text = "Octagon";
+            this.RBOct.Text = "Восьмиугольник";
             this.RBOct.UseVisualStyleBackColor = true;
             // 
             // RBElp
@@ -141,10 +146,10 @@
             this.RBElp.Location = new System.Drawing.Point(8, 79);
             this.RBElp.Margin = new System.Windows.Forms.Padding(4);
             this.RBElp.Name = "RBElp";
-            this.RBElp.Size = new System.Drawing.Size(70, 21);
+            this.RBElp.Size = new System.Drawing.Size(82, 22);
             this.RBElp.TabIndex = 9;
             this.RBElp.TabStop = true;
-            this.RBElp.Text = "Ellipse";
+            this.RBElp.Text = "Эллипс";
             this.RBElp.UseVisualStyleBackColor = true;
             // 
             // RBRec
@@ -153,10 +158,10 @@
             this.RBRec.Location = new System.Drawing.Point(8, 52);
             this.RBRec.Margin = new System.Windows.Forms.Padding(4);
             this.RBRec.Name = "RBRec";
-            this.RBRec.Size = new System.Drawing.Size(93, 21);
+            this.RBRec.Size = new System.Drawing.Size(139, 22);
             this.RBRec.TabIndex = 8;
             this.RBRec.TabStop = true;
-            this.RBRec.Text = "Rectangle";
+            this.RBRec.Text = "Прямоугольник";
             this.RBRec.UseVisualStyleBackColor = true;
             // 
             // RBLine
@@ -165,10 +170,10 @@
             this.RBLine.Location = new System.Drawing.Point(8, 23);
             this.RBLine.Margin = new System.Windows.Forms.Padding(4);
             this.RBLine.Name = "RBLine";
-            this.RBLine.Size = new System.Drawing.Size(56, 21);
+            this.RBLine.Size = new System.Drawing.Size(72, 22);
             this.RBLine.TabIndex = 7;
             this.RBLine.TabStop = true;
-            this.RBLine.Text = "Line";
+            this.RBLine.Text = "Линия";
             this.RBLine.UseVisualStyleBackColor = true;
             // 
             // RBTri
@@ -177,170 +182,170 @@
             this.RBTri.Location = new System.Drawing.Point(8, 107);
             this.RBTri.Margin = new System.Windows.Forms.Padding(4);
             this.RBTri.Name = "RBTri";
-            this.RBTri.Size = new System.Drawing.Size(81, 21);
+            this.RBTri.Size = new System.Drawing.Size(117, 22);
             this.RBTri.TabIndex = 6;
             this.RBTri.TabStop = true;
-            this.RBTri.Text = "Triangle";
+            this.RBTri.Text = "Треугольник";
             this.RBTri.UseVisualStyleBackColor = true;
             // 
             // TrWidth
             // 
-            this.TrWidth.Location = new System.Drawing.Point(16, 264);
+            this.TrWidth.Location = new System.Drawing.Point(0, 338);
             this.TrWidth.Margin = new System.Windows.Forms.Padding(4);
             this.TrWidth.Name = "TrWidth";
-            this.TrWidth.Size = new System.Drawing.Size(132, 56);
+            this.TrWidth.Size = new System.Drawing.Size(164, 56);
             this.TrWidth.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(20, 248);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(6, 316);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 17);
+            this.label2.Size = new System.Drawing.Size(119, 18);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Width";
+            this.label2.Text = "Толщина линии:";
             // 
             // PanCol
             // 
             this.PanCol.BackColor = System.Drawing.Color.Black;
-            this.PanCol.Location = new System.Drawing.Point(16, 316);
+            this.PanCol.Location = new System.Drawing.Point(133, 266);
             this.PanCol.Margin = new System.Windows.Forms.Padding(4);
             this.PanCol.Name = "PanCol";
-            this.PanCol.Size = new System.Drawing.Size(132, 21);
+            this.PanCol.Size = new System.Drawing.Size(21, 21);
             this.PanCol.TabIndex = 15;
             this.PanCol.Click += new System.EventHandler(this.PanCol_Click);
-            // 
-            // BtnClr
-            // 
-            this.BtnClr.Location = new System.Drawing.Point(16, 380);
-            this.BtnClr.Margin = new System.Windows.Forms.Padding(4);
-            this.BtnClr.Name = "BtnClr";
-            this.BtnClr.Size = new System.Drawing.Size(132, 28);
-            this.BtnClr.TabIndex = 16;
-            this.BtnClr.Text = "Clear";
-            this.BtnClr.UseVisualStyleBackColor = true;
-            this.BtnClr.Click += new System.EventHandler(this.BtnClr_Click);
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(16, 416);
+            this.comboBox1.Location = new System.Drawing.Point(9, 420);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(131, 24);
+            this.comboBox1.Size = new System.Drawing.Size(145, 24);
             this.comboBox1.TabIndex = 17;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // TBX1
             // 
-            this.TBX1.Location = new System.Drawing.Point(1110, 38);
+            this.TBX1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TBX1.Location = new System.Drawing.Point(9, 466);
             this.TBX1.Margin = new System.Windows.Forms.Padding(4);
             this.TBX1.Name = "TBX1";
-            this.TBX1.Size = new System.Drawing.Size(84, 22);
+            this.TBX1.Size = new System.Drawing.Size(54, 24);
             this.TBX1.TabIndex = 18;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(1013, 41);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(71, 469);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(25, 17);
+            this.label3.Size = new System.Drawing.Size(77, 18);
             this.label3.TabIndex = 19;
-            this.label3.Text = "X1";
+            this.label3.Text = "коорд. X1";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1013, 81);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(71, 502);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 17);
+            this.label4.Size = new System.Drawing.Size(76, 18);
             this.label4.TabIndex = 20;
-            this.label4.Text = "Y1";
+            this.label4.Text = "коорд. Y1";
             // 
             // TBY1
             // 
-            this.TBY1.Location = new System.Drawing.Point(1110, 77);
+            this.TBY1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TBY1.Location = new System.Drawing.Point(9, 498);
             this.TBY1.Margin = new System.Windows.Forms.Padding(4);
             this.TBY1.Name = "TBY1";
-            this.TBY1.Size = new System.Drawing.Size(84, 22);
+            this.TBY1.Size = new System.Drawing.Size(54, 24);
             this.TBY1.TabIndex = 21;
             // 
             // TBX2
             // 
-            this.TBX2.Location = new System.Drawing.Point(1110, 115);
+            this.TBX2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TBX2.Location = new System.Drawing.Point(9, 530);
             this.TBX2.Margin = new System.Windows.Forms.Padding(4);
             this.TBX2.Name = "TBX2";
-            this.TBX2.Size = new System.Drawing.Size(84, 22);
+            this.TBX2.Size = new System.Drawing.Size(54, 24);
             this.TBX2.TabIndex = 22;
             // 
             // TBY2
             // 
-            this.TBY2.Location = new System.Drawing.Point(1110, 152);
+            this.TBY2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TBY2.Location = new System.Drawing.Point(9, 562);
             this.TBY2.Margin = new System.Windows.Forms.Padding(4);
             this.TBY2.Name = "TBY2";
-            this.TBY2.Size = new System.Drawing.Size(84, 22);
+            this.TBY2.Size = new System.Drawing.Size(54, 24);
             this.TBY2.TabIndex = 23;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(1013, 120);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(71, 535);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(25, 17);
+            this.label5.Size = new System.Drawing.Size(77, 18);
             this.label5.TabIndex = 24;
-            this.label5.Text = "X2";
+            this.label5.Text = "коорд. X2";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(1013, 156);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(71, 566);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(25, 17);
+            this.label6.Size = new System.Drawing.Size(76, 18);
             this.label6.TabIndex = 25;
-            this.label6.Text = "Y2";
+            this.label6.Text = "коорд. Y2";
             // 
             // TBPW
             // 
-            this.TBPW.Location = new System.Drawing.Point(1110, 184);
+            this.TBPW.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TBPW.Location = new System.Drawing.Point(9, 594);
             this.TBPW.Margin = new System.Windows.Forms.Padding(4);
             this.TBPW.Name = "TBPW";
-            this.TBPW.Size = new System.Drawing.Size(84, 22);
+            this.TBPW.Size = new System.Drawing.Size(54, 24);
             this.TBPW.TabIndex = 26;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(1013, 188);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(71, 598);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 17);
+            this.label7.Size = new System.Drawing.Size(68, 18);
             this.label7.TabIndex = 27;
-            this.label7.Text = "Pen width";
+            this.label7.Text = "толщина";
             // 
             // BtnChange
             // 
-            this.BtnChange.Location = new System.Drawing.Point(1093, 217);
+            this.BtnChange.Location = new System.Drawing.Point(7, 626);
             this.BtnChange.Margin = new System.Windows.Forms.Padding(4);
             this.BtnChange.Name = "BtnChange";
-            this.BtnChange.Size = new System.Drawing.Size(103, 28);
+            this.BtnChange.Size = new System.Drawing.Size(147, 28);
             this.BtnChange.TabIndex = 28;
-            this.BtnChange.Text = "Применить";
+            this.BtnChange.Text = "Изменить фигуру";
             this.BtnChange.UseVisualStyleBackColor = true;
             this.BtnChange.Click += new System.EventHandler(this.BtnChange_Click);
             // 
             // BtnCancel
             // 
-            this.BtnCancel.Location = new System.Drawing.Point(1093, 253);
+            this.BtnCancel.Location = new System.Drawing.Point(7, 663);
             this.BtnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.BtnCancel.Name = "BtnCancel";
-            this.BtnCancel.Size = new System.Drawing.Size(103, 28);
+            this.BtnCancel.Size = new System.Drawing.Size(147, 28);
             this.BtnCancel.TabIndex = 29;
-            this.BtnCancel.Text = "Отмена";
+            this.BtnCancel.Text = "Снять выделение";
             this.BtnCancel.UseVisualStyleBackColor = true;
             this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
@@ -355,7 +360,7 @@
             this.менюПрограммыToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1207, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1021, 28);
             this.menuStrip1.TabIndex = 32;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -365,7 +370,8 @@
             this.отменитьИзмененияToolStripMenuItem,
             this.вернутьИзмененияToolStripMenuItem,
             this.сохранитьИзображениеToolStripMenuItem,
-            this.загрузитьИзображениеToolStripMenuItem});
+            this.загрузитьИзображениеToolStripMenuItem,
+            this.очиститьИщображениеToolStripMenuItem});
             this.менюПрограммыToolStripMenuItem.Name = "менюПрограммыToolStripMenuItem";
             this.менюПрограммыToolStripMenuItem.Size = new System.Drawing.Size(150, 24);
             this.менюПрограммыToolStripMenuItem.Text = "Меню программы";
@@ -401,12 +407,43 @@
             this.загрузитьИзображениеToolStripMenuItem.Text = "Загрузить изображение";
             this.загрузитьИзображениеToolStripMenuItem.Click += new System.EventHandler(this.BtnLoad_Click);
             // 
+            // очиститьИщображениеToolStripMenuItem
+            // 
+            this.очиститьИщображениеToolStripMenuItem.Name = "очиститьИщображениеToolStripMenuItem";
+            this.очиститьИщображениеToolStripMenuItem.Size = new System.Drawing.Size(308, 26);
+            this.очиститьИщображениеToolStripMenuItem.Text = "Очистить изображение";
+            this.очиститьИщображениеToolStripMenuItem.Click += new System.EventHandler(this.BtnClr_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(6, 266);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(91, 18);
+            this.label8.TabIndex = 33;
+            this.label8.Text = "Цвет линии:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(6, 398);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(110, 18);
+            this.label9.TabIndex = 34;
+            this.label9.Text = "Список фигур:";
+            // 
             // Form_Graphics_Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(1207, 614);
+            this.ClientSize = new System.Drawing.Size(1021, 696);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.BtnChange);
             this.Controls.Add(this.label7);
@@ -420,7 +457,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TBX1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.BtnClr);
             this.Controls.Add(this.PanCol);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TrWidth);
@@ -457,7 +493,6 @@
         private System.Windows.Forms.RadioButton RBOct;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel PanCol;
-        private System.Windows.Forms.Button BtnClr;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox TBX1;
         private System.Windows.Forms.Label label3;
@@ -479,6 +514,9 @@
         private System.Windows.Forms.ToolStripMenuItem вернутьИзмененияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сохранитьИзображениеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem загрузитьИзображениеToolStripMenuItem;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ToolStripMenuItem очиститьИщображениеToolStripMenuItem;
+        private System.Windows.Forms.Label label9;
     }
 }
 

@@ -146,3 +146,6 @@ D:\4_семестр\ООП\3 laba\bin\Debug\MongoDB.Bson.xml
 D:\4_семестр\ООП\3 laba\bin\Debug\MongoDB.Driver.xml
 D:\4_семестр\ООП\3 laba\bin\Debug\MongoDB.Driver.Core.xml
 D:\4_семестр\ООП\3 laba\bin\Debug\System.Buffers.xml
+D:\4_семестр\ООП\Graphics_Editor\bin\Debug\1laba.exe.config
+D:\4_семестр\ООП\Graphics_Editor\obj\Debug\1laba.exe
+D:\4_семестр\ООП\Graphics_Editor\obj\Debug\1laba.pdb
