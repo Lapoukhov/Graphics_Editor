@@ -15,16 +15,15 @@ namespace _1laba
 {
     public partial class Form_Graphics_Editor : Form
     {
-        List<Type> typeList = new List<Type>();
-        Type[] arrList;
         List<Shape> shapes = new List<Shape>();
         List<Shape> shapesRes = new List<Shape>();
-        Color CurrColor = Color.Black;
-        Shape CurrShape, ChoosenShape;
+        List<Type> typeList = new List<Type>();
+        Type[] arrList;
         bool MousePressed = false;
         int NCleared = 0;
         bool WasCYed = false;
-
+        Color CurrColor = Color.Black;
+        Shape CurrShape, ChoosenShape;
         LineCreator LineC = new LineCreator();
         RecCreator RecC = new RecCreator();
         ElpCreator ElpC = new ElpCreator();
@@ -32,19 +31,9 @@ namespace _1laba
         OctCreator OctC = new OctCreator();
         HexCreator HexC = new HexCreator();
 
-        public void RefreshCB()
-        {
-            comboBox1.Items.Clear();
-            foreach (Shape item in shapes)
-            {
-                comboBox1.Items.Add(item);
-            }
-        }
-
         public Form_Graphics_Editor()
         {
             InitializeComponent();
-
             CurrShape = new Line();
             typeList.Add(CurrShape.GetType());
             CurrShape = new Rec();
@@ -57,13 +46,16 @@ namespace _1laba
             typeList.Add(CurrShape.GetType());
             CurrShape = new Hex();
             typeList.Add(CurrShape.GetType());
-
             arrList = typeList.ToArray<Type>();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void Reload()
         {
-            pictureBox1.Refresh();
+            List_Drawn_Figures.Items.Clear();
+            foreach (Shape item in shapes)
+            {
+                List_Drawn_Figures.Items.Add(item);
+            }
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
@@ -84,29 +76,29 @@ namespace _1laba
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
             MousePressed = true;
-            if (RBLine.Checked)
+            if (Line.Checked)
             {
-                CurrShape = LineC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrWidth.Value));
+                CurrShape = LineC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrackBar_Width.Value));
             }
-            else if (RBRec.Checked)
+            else if (Rectangle.Checked)
             {
-                CurrShape = RecC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrWidth.Value));
+                CurrShape = RecC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrackBar_Width.Value));
             }
-            else if (RBElp.Checked)
+            else if (Ellipse.Checked)
             {
-                CurrShape = ElpC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrWidth.Value));
+                CurrShape = ElpC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrackBar_Width.Value));
             }
-            else if (RBTri.Checked)
+            else if (Triangle.Checked)
             {
-                CurrShape = TriC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrWidth.Value));
+                CurrShape = TriC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrackBar_Width.Value));
             }
-            else if (RBOct.Checked)
+            else if (Octagon.Checked)
             {
-                CurrShape = OctC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrWidth.Value));
+                CurrShape = OctC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrackBar_Width.Value));
             }
-            else if (RBHex.Checked)
+            else if (Hexagon.Checked)
             {
-                CurrShape = HexC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrWidth.Value));
+                CurrShape = HexC.Create(e.Location.X, e.Location.Y, e.Location.X, e.Location.Y, new Pen(CurrColor, TrackBar_Width.Value));
             }
         }
 
@@ -117,13 +109,13 @@ namespace _1laba
                 CurrShape.X2 = e.Location.X;
                 CurrShape.Y2 = e.Location.Y;
             }
-            pictureBox1.Refresh();
+            pictureBox_Editor.Refresh();
         }
 
         private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
         {
             shapes.Add(CurrShape);
-            RefreshCB();
+            Reload();
             MousePressed = false;
             NCleared = 0;
             if (WasCYed)
@@ -139,7 +131,7 @@ namespace _1laba
             {
                 shapesRes.Add(shapes[shapes.Count - 1]);
                 shapes.RemoveAt(shapes.Count - 1);
-                pictureBox1.Refresh();
+                pictureBox_Editor.Refresh();
                 WasCYed = true;
             }
             if (NCleared != 0)
@@ -150,10 +142,10 @@ namespace _1laba
                     shapes.Add(shapesRes[i]);
                     shapesRes.RemoveAt(i);
                 }
-                pictureBox1.Refresh();
+                pictureBox_Editor.Refresh();
                 NCleared = 0;
             }
-            RefreshCB();
+            Reload();
         }
 
         private void BtnCY_Click(object sender, EventArgs e)
@@ -162,9 +154,9 @@ namespace _1laba
             {
                 shapes.Add(shapesRes[shapesRes.Count - 1]);
                 shapesRes.RemoveAt(shapesRes.Count - 1);
-                pictureBox1.Refresh();
+                pictureBox_Editor.Refresh();
             }
-            RefreshCB();
+            Reload();
         }
 
         private void BtnClr_Click(object sender, EventArgs e)
@@ -175,8 +167,8 @@ namespace _1laba
                 shapesRes.Add(shapes[i]);
                 shapes.RemoveAt(i);
             }
-            RefreshCB();
-            pictureBox1.Refresh();
+            Reload();
+            pictureBox_Editor.Refresh();
         }
 
         private void PanCol_Click(object sender, EventArgs e)
@@ -193,41 +185,41 @@ namespace _1laba
         private void BtnChange_Click(object sender, EventArgs e)
         {
 
-            if (shapes[comboBox1.SelectedIndex] is IEditable)
+            if (shapes[List_Drawn_Figures.SelectedIndex] is IEditable)
             {
-                shapes[comboBox1.SelectedIndex].PC = PanCol.BackColor.ToArgb();
-                shapes[comboBox1.SelectedIndex].PW = Convert.ToInt32(TBPW.Text);
-                shapes[comboBox1.SelectedIndex].X1 = Convert.ToInt32(TBX1.Text);
-                shapes[comboBox1.SelectedIndex].Y1 = Convert.ToInt32(TBY1.Text);
-                shapes[comboBox1.SelectedIndex].X2 = Convert.ToInt32(TBX2.Text);
-                shapes[comboBox1.SelectedIndex].Y2 = Convert.ToInt32(TBY2.Text);
+                shapes[List_Drawn_Figures.SelectedIndex].PC = PanCol.BackColor.ToArgb();
+                shapes[List_Drawn_Figures.SelectedIndex].PW = Convert.ToInt32(TBPW.Text);
+                shapes[List_Drawn_Figures.SelectedIndex].X1 = Convert.ToInt32(TBX1.Text);
+                shapes[List_Drawn_Figures.SelectedIndex].Y1 = Convert.ToInt32(TBY1.Text);
+                shapes[List_Drawn_Figures.SelectedIndex].X2 = Convert.ToInt32(TBX2.Text);
+                shapes[List_Drawn_Figures.SelectedIndex].Y2 = Convert.ToInt32(TBY2.Text);
 
                 Pen p = new Pen(Color.FromArgb(ChoosenShape.PC));
                 p.Width = ChoosenShape.PW;
                 SelectedShape.SetSel(ChoosenShape.X1, ChoosenShape.Y1, ChoosenShape.X2, ChoosenShape.Y2, p);
 
-                pictureBox1.Refresh();
+                pictureBox_Editor.Refresh();
             }
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             SelectedShape.SetFalse();
-            pictureBox1.Refresh();
+            pictureBox_Editor.Refresh();
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
         {
-            if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
-                return;
-            string filename = saveFileDialog1.FileName + ".json";
+              if (saveFileDialog1.ShowDialog() == DialogResult.Cancel)
+                  return;
+              string filename = saveFileDialog1.FileName + ".json";
 
-            Type type = shapes.GetType();
-            DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(List<Shape>), arrList);
-            using (FileStream fs = new FileStream(filename, FileMode.Create))
-            {
-                jsonFormatter.WriteObject(fs, shapes);
-            }
+              Type type = shapes.GetType();
+              DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(List<Shape>), arrList);
+              using (FileStream fs = new FileStream(filename, FileMode.Create))
+              {
+                  jsonFormatter.WriteObject(fs, shapes);
+              }
         }
 
         private void BtnLoad_Click(object sender, EventArgs e)
@@ -236,7 +228,6 @@ namespace _1laba
                 return;
             string filename = openFileDialog1.FileName;
             string text;
-            //Type type = shapeList.GetType(); 
             DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(List<Shape>), arrList);
             using (FileStream fs = new FileStream(filename, FileMode.OpenOrCreate))
             {
@@ -275,24 +266,21 @@ namespace _1laba
                         {
                             shapes.Add((Shape)jsonFormatter.ReadObject(fs));
                         }
-                        comboBox1.Items.Add(shapes[shapes.Count - 1]);
+                        List_Drawn_Figures.Items.Add(shapes[shapes.Count - 1]);
                     }
                     catch
-                    {
-
-                    }
-
+                    {}
                     buff = String.Empty;
                 }
             }
             catch
             {}
-            pictureBox1.Refresh();
+            pictureBox_Editor.Refresh();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ChoosenShape = (Shape)comboBox1.SelectedItem;
+            ChoosenShape = (Shape)List_Drawn_Figures.SelectedItem;
             if (ChoosenShape is ISelectable)
             {
                 Pen p = new Pen(Color.FromArgb(ChoosenShape.PC));
@@ -304,7 +292,7 @@ namespace _1laba
                 TBX2.Text = Convert.ToString(ChoosenShape.X2);
                 TBY2.Text = Convert.ToString(ChoosenShape.Y2);
                 TBPW.Text = Convert.ToString(ChoosenShape.PW);
-                pictureBox1.Refresh();
+                pictureBox_Editor.Refresh();
             }
         }
     }

@@ -18,20 +18,16 @@ namespace _1laba
             this.Y2 = Y2;
             this.PW = (int)P.Width;
             this.PC = P.Color.ToArgb();
-            //this.P = P;
         }
 
         public Line()
         {
-
         }
 
         public override void Draw(Graphics g)
         {
-
             Pen P = new Pen(Color.FromArgb(PC));
             P.Width = PW;
-
             g.DrawLine(P, X1, Y1, X2, Y2);
         }
     }

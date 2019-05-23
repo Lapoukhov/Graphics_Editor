@@ -22,7 +22,6 @@ namespace _1laba
 
         public Oct()
         {
-
         }
 
         public override void Draw(Graphics g)
@@ -33,10 +32,8 @@ namespace _1laba
             int BY = Math.Max(Y1, Y2);
             int w = Math.Abs(X1 - X2)/3;
             int h = Math.Abs(Y1 - Y2)/3;
-
             Pen P = new Pen(Color.FromArgb(PC));
             P.Width = PW;
-
             g.DrawLine(P, AX, AY + h, AX+w, AY);
             g.DrawLine(P, AX + w, AY, AX + 2 * w, AY);
             g.DrawLine(P, AX + 2 * w, AY, BX, AY + h);

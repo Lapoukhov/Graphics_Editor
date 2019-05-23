@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox_Editor = new System.Windows.Forms.PictureBox();
             this.GBShp = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.RBHex = new System.Windows.Forms.RadioButton();
-            this.RBOct = new System.Windows.Forms.RadioButton();
-            this.RBElp = new System.Windows.Forms.RadioButton();
-            this.RBRec = new System.Windows.Forms.RadioButton();
-            this.RBLine = new System.Windows.Forms.RadioButton();
-            this.RBTri = new System.Windows.Forms.RadioButton();
-            this.TrWidth = new System.Windows.Forms.TrackBar();
+            this.Hexagon = new System.Windows.Forms.RadioButton();
+            this.Octagon = new System.Windows.Forms.RadioButton();
+            this.Ellipse = new System.Windows.Forms.RadioButton();
+            this.Rectangle = new System.Windows.Forms.RadioButton();
+            this.Line = new System.Windows.Forms.RadioButton();
+            this.Triangle = new System.Windows.Forms.RadioButton();
+            this.TrackBar_Width = new System.Windows.Forms.TrackBar();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.label2 = new System.Windows.Forms.Label();
             this.PanCol = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.List_Drawn_Figures = new System.Windows.Forms.ComboBox();
             this.TBX1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -65,36 +65,36 @@
             this.очиститьИщображениеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Editor)).BeginInit();
             this.GBShp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TrWidth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TrackBar_Width)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox_Editor
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(179, 44);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(836, 647);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
-            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
-            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
+            this.pictureBox_Editor.BackColor = System.Drawing.Color.White;
+            this.pictureBox_Editor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_Editor.Location = new System.Drawing.Point(179, 44);
+            this.pictureBox_Editor.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox_Editor.Name = "pictureBox_Editor";
+            this.pictureBox_Editor.Size = new System.Drawing.Size(836, 647);
+            this.pictureBox_Editor.TabIndex = 0;
+            this.pictureBox_Editor.TabStop = false;
+            this.pictureBox_Editor.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            this.pictureBox_Editor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            this.pictureBox_Editor.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
+            this.pictureBox_Editor.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
             // GBShp
             // 
             this.GBShp.Controls.Add(this.label1);
-            this.GBShp.Controls.Add(this.RBHex);
-            this.GBShp.Controls.Add(this.RBOct);
-            this.GBShp.Controls.Add(this.RBElp);
-            this.GBShp.Controls.Add(this.RBRec);
-            this.GBShp.Controls.Add(this.RBLine);
-            this.GBShp.Controls.Add(this.RBTri);
+            this.GBShp.Controls.Add(this.Hexagon);
+            this.GBShp.Controls.Add(this.Octagon);
+            this.GBShp.Controls.Add(this.Ellipse);
+            this.GBShp.Controls.Add(this.Rectangle);
+            this.GBShp.Controls.Add(this.Line);
+            this.GBShp.Controls.Add(this.Triangle);
             this.GBShp.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.GBShp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.GBShp.Location = new System.Drawing.Point(0, 37);
@@ -116,85 +116,86 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Width";
             // 
-            // RBHex
+            // Hexagon
             // 
-            this.RBHex.AutoSize = true;
-            this.RBHex.Location = new System.Drawing.Point(8, 164);
-            this.RBHex.Margin = new System.Windows.Forms.Padding(4);
-            this.RBHex.Name = "RBHex";
-            this.RBHex.Size = new System.Drawing.Size(136, 22);
-            this.RBHex.TabIndex = 11;
-            this.RBHex.TabStop = true;
-            this.RBHex.Text = "Шестиугольник";
-            this.RBHex.UseVisualStyleBackColor = true;
+            this.Hexagon.AutoSize = true;
+            this.Hexagon.Location = new System.Drawing.Point(8, 164);
+            this.Hexagon.Margin = new System.Windows.Forms.Padding(4);
+            this.Hexagon.Name = "Hexagon";
+            this.Hexagon.Size = new System.Drawing.Size(136, 22);
+            this.Hexagon.TabIndex = 11;
+            this.Hexagon.TabStop = true;
+            this.Hexagon.Text = "Шестиугольник";
+            this.Hexagon.UseVisualStyleBackColor = true;
             // 
-            // RBOct
+            // Octagon
             // 
-            this.RBOct.AutoSize = true;
-            this.RBOct.Location = new System.Drawing.Point(8, 135);
-            this.RBOct.Margin = new System.Windows.Forms.Padding(4);
-            this.RBOct.Name = "RBOct";
-            this.RBOct.Size = new System.Drawing.Size(146, 22);
-            this.RBOct.TabIndex = 10;
-            this.RBOct.TabStop = true;
-            this.RBOct.Text = "Восьмиугольник";
-            this.RBOct.UseVisualStyleBackColor = true;
+            this.Octagon.AutoSize = true;
+            this.Octagon.Location = new System.Drawing.Point(8, 135);
+            this.Octagon.Margin = new System.Windows.Forms.Padding(4);
+            this.Octagon.Name = "Octagon";
+            this.Octagon.Size = new System.Drawing.Size(146, 22);
+            this.Octagon.TabIndex = 10;
+            this.Octagon.TabStop = true;
+            this.Octagon.Text = "Восьмиугольник";
+            this.Octagon.UseVisualStyleBackColor = true;
             // 
-            // RBElp
+            // Ellipse
             // 
-            this.RBElp.AutoSize = true;
-            this.RBElp.Location = new System.Drawing.Point(8, 79);
-            this.RBElp.Margin = new System.Windows.Forms.Padding(4);
-            this.RBElp.Name = "RBElp";
-            this.RBElp.Size = new System.Drawing.Size(82, 22);
-            this.RBElp.TabIndex = 9;
-            this.RBElp.TabStop = true;
-            this.RBElp.Text = "Эллипс";
-            this.RBElp.UseVisualStyleBackColor = true;
+            this.Ellipse.AutoSize = true;
+            this.Ellipse.Location = new System.Drawing.Point(8, 79);
+            this.Ellipse.Margin = new System.Windows.Forms.Padding(4);
+            this.Ellipse.Name = "Ellipse";
+            this.Ellipse.Size = new System.Drawing.Size(82, 22);
+            this.Ellipse.TabIndex = 9;
+            this.Ellipse.TabStop = true;
+            this.Ellipse.Text = "Эллипс";
+            this.Ellipse.UseVisualStyleBackColor = true;
             // 
-            // RBRec
+            // Rectangle
             // 
-            this.RBRec.AutoSize = true;
-            this.RBRec.Location = new System.Drawing.Point(8, 52);
-            this.RBRec.Margin = new System.Windows.Forms.Padding(4);
-            this.RBRec.Name = "RBRec";
-            this.RBRec.Size = new System.Drawing.Size(139, 22);
-            this.RBRec.TabIndex = 8;
-            this.RBRec.TabStop = true;
-            this.RBRec.Text = "Прямоугольник";
-            this.RBRec.UseVisualStyleBackColor = true;
+            this.Rectangle.AutoSize = true;
+            this.Rectangle.Location = new System.Drawing.Point(8, 52);
+            this.Rectangle.Margin = new System.Windows.Forms.Padding(4);
+            this.Rectangle.Name = "Rectangle";
+            this.Rectangle.Size = new System.Drawing.Size(139, 22);
+            this.Rectangle.TabIndex = 8;
+            this.Rectangle.TabStop = true;
+            this.Rectangle.Text = "Прямоугольник";
+            this.Rectangle.UseVisualStyleBackColor = true;
             // 
-            // RBLine
+            // Line
             // 
-            this.RBLine.AutoSize = true;
-            this.RBLine.Location = new System.Drawing.Point(8, 23);
-            this.RBLine.Margin = new System.Windows.Forms.Padding(4);
-            this.RBLine.Name = "RBLine";
-            this.RBLine.Size = new System.Drawing.Size(72, 22);
-            this.RBLine.TabIndex = 7;
-            this.RBLine.TabStop = true;
-            this.RBLine.Text = "Линия";
-            this.RBLine.UseVisualStyleBackColor = true;
+            this.Line.AutoSize = true;
+            this.Line.Location = new System.Drawing.Point(8, 23);
+            this.Line.Margin = new System.Windows.Forms.Padding(4);
+            this.Line.Name = "Line";
+            this.Line.Size = new System.Drawing.Size(72, 22);
+            this.Line.TabIndex = 7;
+            this.Line.TabStop = true;
+            this.Line.Text = "Линия";
+            this.Line.UseVisualStyleBackColor = true;
             // 
-            // RBTri
+            // Triangle
             // 
-            this.RBTri.AutoSize = true;
-            this.RBTri.Location = new System.Drawing.Point(8, 107);
-            this.RBTri.Margin = new System.Windows.Forms.Padding(4);
-            this.RBTri.Name = "RBTri";
-            this.RBTri.Size = new System.Drawing.Size(117, 22);
-            this.RBTri.TabIndex = 6;
-            this.RBTri.TabStop = true;
-            this.RBTri.Text = "Треугольник";
-            this.RBTri.UseVisualStyleBackColor = true;
+            this.Triangle.AutoSize = true;
+            this.Triangle.Location = new System.Drawing.Point(8, 107);
+            this.Triangle.Margin = new System.Windows.Forms.Padding(4);
+            this.Triangle.Name = "Triangle";
+            this.Triangle.Size = new System.Drawing.Size(117, 22);
+            this.Triangle.TabIndex = 6;
+            this.Triangle.TabStop = true;
+            this.Triangle.Text = "Треугольник";
+            this.Triangle.UseVisualStyleBackColor = true;
             // 
-            // TrWidth
+            // TrackBar_Width
             // 
-            this.TrWidth.Location = new System.Drawing.Point(0, 338);
-            this.TrWidth.Margin = new System.Windows.Forms.Padding(4);
-            this.TrWidth.Name = "TrWidth";
-            this.TrWidth.Size = new System.Drawing.Size(164, 56);
-            this.TrWidth.TabIndex = 10;
+            this.TrackBar_Width.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrackBar_Width.Location = new System.Drawing.Point(0, 338);
+            this.TrackBar_Width.Margin = new System.Windows.Forms.Padding(4);
+            this.TrackBar_Width.Name = "TrackBar_Width";
+            this.TrackBar_Width.Size = new System.Drawing.Size(164, 56);
+            this.TrackBar_Width.TabIndex = 10;
             // 
             // label2
             // 
@@ -217,15 +218,15 @@
             this.PanCol.TabIndex = 15;
             this.PanCol.Click += new System.EventHandler(this.PanCol_Click);
             // 
-            // comboBox1
+            // List_Drawn_Figures
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(9, 420);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(145, 24);
-            this.comboBox1.TabIndex = 17;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.List_Drawn_Figures.FormattingEnabled = true;
+            this.List_Drawn_Figures.Location = new System.Drawing.Point(9, 420);
+            this.List_Drawn_Figures.Margin = new System.Windows.Forms.Padding(4);
+            this.List_Drawn_Figures.Name = "List_Drawn_Figures";
+            this.List_Drawn_Figures.Size = new System.Drawing.Size(145, 24);
+            this.List_Drawn_Figures.TabIndex = 17;
+            this.List_Drawn_Figures.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // TBX1
             // 
@@ -329,6 +330,8 @@
             // 
             // BtnChange
             // 
+            this.BtnChange.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BtnChange.Location = new System.Drawing.Point(7, 626);
             this.BtnChange.Margin = new System.Windows.Forms.Padding(4);
             this.BtnChange.Name = "BtnChange";
@@ -340,6 +343,8 @@
             // 
             // BtnCancel
             // 
+            this.BtnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.BtnCancel.Location = new System.Drawing.Point(7, 663);
             this.BtnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.BtnCancel.Name = "BtnCancel";
@@ -456,21 +461,21 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TBX1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.List_Drawn_Figures);
             this.Controls.Add(this.PanCol);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.TrWidth);
+            this.Controls.Add(this.TrackBar_Width);
             this.Controls.Add(this.GBShp);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox_Editor);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_Graphics_Editor";
             this.Text = "Lab1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Editor)).EndInit();
             this.GBShp.ResumeLayout(false);
             this.GBShp.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.TrWidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TrackBar_Width)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -480,20 +485,20 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox_Editor;
         private System.Windows.Forms.GroupBox GBShp;
-        private System.Windows.Forms.RadioButton RBElp;
-        private System.Windows.Forms.RadioButton RBRec;
-        private System.Windows.Forms.RadioButton RBLine;
-        private System.Windows.Forms.RadioButton RBTri;
-        private System.Windows.Forms.TrackBar TrWidth;
+        private System.Windows.Forms.RadioButton Ellipse;
+        private System.Windows.Forms.RadioButton Rectangle;
+        private System.Windows.Forms.RadioButton Line;
+        private System.Windows.Forms.RadioButton Triangle;
+        private System.Windows.Forms.TrackBar TrackBar_Width;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton RBHex;
-        private System.Windows.Forms.RadioButton RBOct;
+        private System.Windows.Forms.RadioButton Hexagon;
+        private System.Windows.Forms.RadioButton Octagon;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel PanCol;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox List_Drawn_Figures;
         private System.Windows.Forms.TextBox TBX1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

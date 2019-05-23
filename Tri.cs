@@ -18,12 +18,10 @@ namespace _1laba
             this.Y2 = Y2;
             this.PW = (int)P.Width;
             this.PC = P.Color.ToArgb();
-            //this.P = P;
         }
 
         public Tri()
         {
-
         }
 
         public override void Draw(Graphics g)
@@ -34,11 +32,8 @@ namespace _1laba
             int BY = Math.Max(Y1, Y2);
             int CX = BX;
             int CY = AY;
-
-
             Pen P = new Pen(Color.FromArgb(PC));
             P.Width = PW;
-
             g.DrawLine(P, AX, AY, BX, BY);
             g.DrawLine(P, BX, BY, CX, CY);
             g.DrawLine(P, CX, CY, AX, AY);

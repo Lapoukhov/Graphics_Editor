@@ -18,12 +18,10 @@ namespace _1laba
             this.Y2 = Y2;
             this.PW = (int)P.Width;
             this.PC = P.Color.ToArgb();
-            //this.P = P;
         }
 
         public Elp()
-        {
-            
+        {     
         }
 
         public override void Draw(Graphics g)

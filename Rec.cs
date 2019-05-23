@@ -18,12 +18,10 @@ namespace _1laba
             this.Y2 = Y2;
             this.PW = (int)P.Width;
             this.PC = P.Color.ToArgb();
-            //this.P = P;
         }
 
         public Rec()
         {
-
         }
 
         public override void Draw(Graphics g)
@@ -32,11 +30,8 @@ namespace _1laba
             int h = Math.Abs(Y1 - Y2);
             int X = Math.Min(X1, X2);
             int Y = Math.Min(Y1, Y2);
-
-
             Pen P = new Pen(Color.FromArgb(PC));
             P.Width = PW;
-
             g.DrawRectangle(P, X, Y, w, h);
         }
     }

@@ -18,12 +18,10 @@ namespace _1laba
             this.Y2 = Y2;
             this.PW = (int)P.Width;
             this.PC = P.Color.ToArgb();
-            //this.P = P;
         }
 
         public Hex()
         {
-
         }
 
         public override void Draw(Graphics g)
@@ -34,7 +32,6 @@ namespace _1laba
             int BY = Math.Max(Y1, Y2);
             int w = Math.Abs(X1 - X2) / 3;
             int h = Math.Abs(Y1 - Y2) / 2;
-
 
             Pen P = new Pen(Color.FromArgb(PC));
             P.Width = PW;
