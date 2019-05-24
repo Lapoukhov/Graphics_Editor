@@ -227,16 +227,13 @@ namespace _1laba
             if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
                 return;
             string filename = openFileDialog1.FileName;
-            string text;
+            string strEncoding;
             DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(List<Shape>), arrList);
             using (FileStream fs = new FileStream(filename, FileMode.OpenOrCreate))
             {
-                // преобразуем строку в байты 
                 byte[] array = new byte[fs.Length];
-                // считываем данные 
                 fs.Read(array, 0, array.Length);
-                // декодируем байты в строку 
-                text = Encoding.Default.GetString(array); 
+                strEncoding = Encoding.Default.GetString(array); 
             }
 
             shapes.Clear();
@@ -244,14 +241,14 @@ namespace _1laba
             string buff = String.Empty;
             try
             {
-                while (i < text.Length)
+                while (i < strEncoding.Length)
                 {
-                    while (text[i] != '}')
+                    while (strEncoding[i] != '}')
                     {
-                        buff += text[i];
+                        buff += strEncoding[i];
                         i++;
                     }
-                    buff += text[i];
+                    buff += strEncoding[i];
                     i++;
                     i++;
 

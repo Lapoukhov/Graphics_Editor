@@ -1,8 +1,3 @@
-D:\4_семестр\ООП\Graphics_Editor\bin\Debug\1laba.exe.config
-D:\4_семестр\ООП\Graphics_Editor\obj\Debug\1laba.exe
-D:\4_семестр\ООП\Graphics_Editor\obj\Debug\1laba.pdb
-D:\4_семестр\ООП\Graphics_Editor\bin\Debug\1laba.exe
-D:\4_семестр\ООП\Graphics_Editor\bin\Debug\1laba.pdb
 D:\4_семестр\ООП\Graphics_Editor\bin\Debug\DnsClient.dll
 D:\4_семестр\ООП\Graphics_Editor\bin\Debug\MongoDB.Bson.dll
 D:\4_семестр\ООП\Graphics_Editor\bin\Debug\MongoDB.Driver.Core.dll
@@ -16,5 +11,10 @@ D:\4_семестр\ООП\Graphics_Editor\bin\Debug\MongoDB.Driver.Core.xml
 D:\4_семестр\ООП\Graphics_Editor\bin\Debug\System.Buffers.xml
 D:\4_семестр\ООП\Graphics_Editor\obj\Debug\My_Graphics_Editor.csprojResolveAssemblyReference.cache
 D:\4_семестр\ООП\Graphics_Editor\obj\Debug\_1laba.Form_Graphics_Editor.resources
-D:\4_семестр\ООП\Graphics_Editor\obj\Debug\_1laba.Properties.Resources.resources
 D:\4_семестр\ООП\Graphics_Editor\obj\Debug\My_Graphics_Editor.csproj.GenerateResource.Cache
+D:\4_семестр\ООП\Graphics_Editor\bin\Debug\My_Graphics_Editor.exe.config
+D:\4_семестр\ООП\Graphics_Editor\bin\Debug\My_Graphics_Editor.exe
+D:\4_семестр\ООП\Graphics_Editor\bin\Debug\My_Graphics_Editor.pdb
+D:\4_семестр\ООП\Graphics_Editor\obj\Debug\Graphics_Editor.Properties.Resources.resources
+D:\4_семестр\ООП\Graphics_Editor\obj\Debug\My_Graphics_Editor.exe
+D:\4_семестр\ООП\Graphics_Editor\obj\Debug\My_Graphics_Editor.pdb
