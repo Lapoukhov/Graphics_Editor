@@ -1,0 +1,14 @@
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\bin\Debug\PentagonLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\bin\Debug\PentagonLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\bin\Debug\IEditable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\bin\Debug\ISelectable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\bin\Debug\ShapeLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\bin\Debug\IEditable.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\bin\Debug\ISelectable.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\bin\Debug\ShapeLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\obj\Debug\PentagonLib.csproj.CoreCompileInputs.cache
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\obj\Debug\PentagonLib.csproj.CopyComplete
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\obj\Debug\PentagonLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\obj\Debug\PentagonLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\bin\Debug\PluginInterface.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\PentagonLib\PentagonLib\PentagonLib\bin\Debug\PluginInterface.pdb

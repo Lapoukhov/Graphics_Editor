@@ -1,0 +1,15 @@
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\bin\Debug\Star.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\bin\Debug\Star.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\bin\Debug\IEditable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\bin\Debug\ISelectable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\bin\Debug\ShapeLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\bin\Debug\IEditable.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\bin\Debug\ISelectable.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\bin\Debug\ShapeLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\obj\Debug\Star.csproj.CoreCompileInputs.cache
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\obj\Debug\Star.csproj.CopyComplete
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\obj\Debug\Star.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\obj\Debug\Star.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\bin\Debug\PluginInterface.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\bin\Debug\PluginInterface.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\StarLib\Star\Star\obj\Debug\Star.csprojAssemblyReference.cache

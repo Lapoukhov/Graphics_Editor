@@ -1,0 +1,9 @@
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\PluginIntf\PluginInterface\PluginInterface\bin\Debug\PluginInterface.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\PluginIntf\PluginInterface\PluginInterface\bin\Debug\PluginInterface.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\PluginIntf\PluginInterface\PluginInterface\obj\Debug\PluginInterface.csprojAssemblyReference.cache
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\PluginIntf\PluginInterface\PluginInterface\obj\Debug\PluginInterface.csproj.CoreCompileInputs.cache
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\PluginIntf\PluginInterface\PluginInterface\obj\Debug\PluginInterface.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\PluginIntf\PluginInterface\PluginInterface\obj\Debug\PluginInterface.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\PluginIntf\PluginInterface\PluginInterface\bin\Debug\ShapeLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\PluginIntf\PluginInterface\PluginInterface\bin\Debug\ShapeLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\PluginIntf\PluginInterface\PluginInterface\obj\Debug\PluginInterface.csproj.CopyComplete

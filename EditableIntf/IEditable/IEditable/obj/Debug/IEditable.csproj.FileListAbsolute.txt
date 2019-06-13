@@ -1,0 +1,5 @@
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\EditableIntf\IEditable\IEditable\bin\Debug\IEditable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\EditableIntf\IEditable\IEditable\bin\Debug\IEditable.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\EditableIntf\IEditable\IEditable\obj\Debug\IEditable.csproj.CoreCompileInputs.cache
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\EditableIntf\IEditable\IEditable\obj\Debug\IEditable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\EditableIntf\IEditable\IEditable\obj\Debug\IEditable.pdb

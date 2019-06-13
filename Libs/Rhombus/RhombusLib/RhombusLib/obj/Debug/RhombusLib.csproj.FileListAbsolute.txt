@@ -1,0 +1,15 @@
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\bin\Debug\RhombusLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\bin\Debug\RhombusLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\bin\Debug\IEditable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\bin\Debug\ISelectable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\bin\Debug\ShapeLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\bin\Debug\IEditable.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\bin\Debug\ISelectable.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\bin\Debug\ShapeLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\obj\Debug\RhombusLib.csprojAssemblyReference.cache
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\obj\Debug\RhombusLib.csproj.CoreCompileInputs.cache
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\obj\Debug\RhombusLib.csproj.CopyComplete
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\obj\Debug\RhombusLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\obj\Debug\RhombusLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\bin\Debug\PluginInterface.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\Rhombus\RhombusLib\RhombusLib\bin\Debug\PluginInterface.pdb

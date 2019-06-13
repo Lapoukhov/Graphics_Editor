@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _1laba
+namespace GraphicsEditor
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace _1laba
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_Graphics_Editor());
+            Application.Run(new Form1());
         }
     }
 }

@@ -1,0 +1,5 @@
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\SelectableIntf\ISelectable\ISelectable\bin\Debug\ISelectable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\SelectableIntf\ISelectable\ISelectable\bin\Debug\ISelectable.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\SelectableIntf\ISelectable\ISelectable\obj\Debug\ISelectable.csproj.CoreCompileInputs.cache
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\SelectableIntf\ISelectable\ISelectable\obj\Debug\ISelectable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\SelectableIntf\ISelectable\ISelectable\obj\Debug\ISelectable.pdb

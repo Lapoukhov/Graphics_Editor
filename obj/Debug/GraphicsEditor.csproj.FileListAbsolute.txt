@@ -1,0 +1,17 @@
+D:\4_семестр\ООП\Lab_4\bin\Debug\IEditable.dll
+D:\4_семестр\ООП\Lab_4\bin\Debug\ISelectable.dll
+D:\4_семестр\ООП\Lab_4\bin\Debug\PluginInterface.dll
+D:\4_семестр\ООП\Lab_4\bin\Debug\ShapeLib.dll
+D:\4_семестр\ООП\Lab_4\bin\Debug\IEditable.pdb
+D:\4_семестр\ООП\Lab_4\bin\Debug\ISelectable.pdb
+D:\4_семестр\ООП\Lab_4\bin\Debug\PluginInterface.pdb
+D:\4_семестр\ООП\Lab_4\bin\Debug\ShapeLib.pdb
+D:\4_семестр\ООП\Lab_4\obj\Debug\GraphicsEditor.csproj.GenerateResource.Cache
+D:\4_семестр\ООП\Lab_4\bin\Debug\GraphicsEditor.exe.config
+D:\4_семестр\ООП\Lab_4\bin\Debug\GraphicsEditor.exe
+D:\4_семестр\ООП\Lab_4\bin\Debug\GraphicsEditor.pdb
+D:\4_семестр\ООП\Lab_4\obj\Debug\GraphicsEditor.exe
+D:\4_семестр\ООП\Lab_4\obj\Debug\GraphicsEditor.pdb
+D:\4_семестр\ООП\Lab_4\obj\Debug\GraphicsEditor.Properties.Resources.resources
+D:\4_семестр\ООП\Lab_4\obj\Debug\GraphicsEditor.Form1.resources
+D:\4_семестр\ООП\Lab_4\obj\Debug\GraphicsEditor.csprojResolveAssemblyReference.cache

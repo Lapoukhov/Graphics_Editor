@@ -1,0 +1,11 @@
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\LineLib\LineLib\bin\Debug\LineLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\LineLib\LineLib\bin\Debug\LineLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\LineLib\LineLib\bin\Debug\ShapeLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\LineLib\LineLib\bin\Debug\ShapeLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\LineLib\LineLib\obj\Debug\LineLib.csproj.CoreCompileInputs.cache
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\LineLib\LineLib\obj\Debug\LineLib.csproj.CopyComplete
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\LineLib\LineLib\obj\Debug\LineLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\LineLib\LineLib\obj\Debug\LineLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\LineLib\LineLib\obj\Debug\LineLib.csprojAssemblyReference.cache
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\LineLib\LineLib\bin\Debug\PluginInterface.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\LineLib\LineLib\bin\Debug\PluginInterface.pdb

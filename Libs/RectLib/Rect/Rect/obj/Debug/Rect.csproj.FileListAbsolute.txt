@@ -1,0 +1,15 @@
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\bin\Debug\Rect.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\bin\Debug\Rect.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\bin\Debug\ShapeLib.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\bin\Debug\ShapeLib.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\obj\Debug\Rect.csproj.CoreCompileInputs.cache
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\obj\Debug\Rect.csproj.CopyComplete
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\obj\Debug\Rect.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\obj\Debug\Rect.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\bin\Debug\IEditable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\bin\Debug\ISelectable.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\bin\Debug\IEditable.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\bin\Debug\ISelectable.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\bin\Debug\PluginInterface.dll
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\bin\Debug\PluginInterface.pdb
+D:\4курс\ООП\Lab1\OOP1\OOP1\OOP1\Libs\RectLib\Rect\Rect\obj\Debug\Rect.csprojAssemblyReference.cache
